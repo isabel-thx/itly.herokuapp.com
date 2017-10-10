@@ -1,2 +1,53 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+
+  <div class="navbar">
+    <a href="/"><img src="img/itlylogo.png" width="87px" height="39px"></a>
+      <ul class="pagelinks">
+        <li class="button" id="tour"><a href='/' style="color: white">TOUR</a></li>
+        <li class="button" id="enterprise"><a href='/' style="color: white">ENTERPRISE</a></li>
+        <li class="button" id="resources"><a href='/' style="color: white">RESOURCES</a></li>
+        <li class="button" id="blog"><a href='/blog' style="color: white">BLOG</a></li>
+        <li class="button" id= "about"><a href='/' style="color: white">ABOUT</a></li>
+      </ul>
+  </div>
+
+
+<div class="background">
+  <img id="background" width="cover" height="500px">
+</div>
+
+
+<h1 class="title">THE LINK KNOWS ALL. SO CAN YOU.</h1>
+
+
+<p class="description">Measure your links with Itly, the world's leading link management platform.</p>
+
+
+<p class="url_submit"><form id='url-form' action="/urls" method="post">
+
+	<input class="textbox" type="text" name="long_url" placeholder="Paste a link to shorten it">
+    <input id="submit_button" type="submit" value="Submit">
+ </form></p>
+
+
+<% if @url && @url.short_url %>
+	<h2>Your itly link is</h2> <!-- <h5>localhost:9393/<%#= @url.short_url %></h5> -->
+	<h5><a href="<%= @url.short_url%>"><%= "localhost:9393/" + @url.short_url %></a></h5>
+<% end %>
+
+<div id="result">
+</div>
+
+<!-- sender
+<p><form action='/submit' method='post'>
+-->
+<!-- label
+	<label for="">Who are you?</label>
+-->
+<!-- small text box
+	<input type="text" name="last_name" placeholder="Last Name">
+-->
+<!-- bigger text box
+	<textarea name="url" placeholder="Paste a link to shorten it"> </textarea>
+ -->
+
+

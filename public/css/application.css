@@ -1,0 +1,86 @@
+
+.navbar {
+    height: 50px;
+    padding: 30px;
+}
+
+.pagelinks {
+    display: inline;
+    text-decoration: none;
+
+}
+
+.button {
+    display: inline;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+.button:link, .button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.background {
+    opacity: 0.7;
+    background: url(bitly.png) no-repeat center center;
+    
+/*    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+
+}
+
+body {
+  background-color: #155168;
+}
+
+
+.title {
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.description {
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    color: white;
+}
+
+.textbox {
+  width: 550px;
+  border:2px solid #ffffff;
+  background: transparent;
+  border-radius:10px;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+
+#submit_button {
+  width: 60px;
+  height: 60px;
+/*  box-sizing: border-box;
+  font-size: 13px;*/
+}
+
+#url-form {
+  text-align: center;
+}
+
+#result {
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+}
